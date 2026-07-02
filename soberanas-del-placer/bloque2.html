@@ -1,0 +1,49 @@
+<style>
+  .sdp-intro {
+    padding-top: 24px;
+    padding-bottom: 44px;
+  }
+
+  .sdp-narrow {
+    max-width: 760px;
+  }
+
+  .sdp-intro .sdp-narrow {
+    border-left: 1px solid var(--sdp-border);
+    padding-left: clamp(24px, 4vw, 48px);
+  }
+
+  .sdp-intro h2 {
+    max-width: 760px;
+    margin-bottom: 24px;
+  }
+
+  .sdp-intro p:last-child {
+    max-width: 700px;
+    margin: 0;
+    color: var(--sdp-muted);
+  }
+
+  @media (max-width: 640px) {
+    .sdp-intro .sdp-narrow {
+      padding-left: 22px;
+    }
+
+    .sdp-section h2 {
+      font-size: clamp(36px, 11vw, 52px);
+    }
+  }
+</style>
+
+<section class="sdp-section sdp-intro">
+  <div class="sdp-container sdp-narrow">
+
+    <h2>Más que un viaje, una experiencia para recordar</h2>
+
+    <p>
+      Durante unos días, el mar, el cuerpo, la tribu y el placer se volvieron
+      territorio de encuentro. Nos reunimos para bajar el ritmo, escucharnos,
+      habitar la piel y recordar que el gozo también puede ser un camino de regreso a casa.
+    </p>
+  </div>
+</section>

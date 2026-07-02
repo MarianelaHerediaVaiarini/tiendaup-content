@@ -1,0 +1,77 @@
+<!-- CIERRE -->
+<section class="mp-closing">
+  <div class="mp-closing-word">volver</div>
+
+  <div class="mp-closing-inner">
+    <p class="mp-eyebrow red">la invitación</p>
+
+    <h2>
+      <span>Salgamos del automático y encendamos tu presencia.</span>
+    </h2>
+
+    <p>
+      Si esto te resonó, te esperamos para vivirlo juntas.
+    </p>
+
+    <p>
+      Gracias gracias gracias tribu
+    </p>
+
+    <a href="#" class="mp-button js-open-perfit-optin">
+      Me sumo!
+    </a>
+  </div>
+</section>
+
+<!-- Optin Perfit - Inicio -->
+<div class="mp-hidden-perfit-optin">
+  <div id="optin-6PkmQoNk" data-type="button"></div>
+</div>
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://optin.myperfit.com/res/css/linktrr/6PkmQoNk.css"
+/>
+
+<script
+  type="text/javascript"
+  src="https://optin.myperfit.com/res/js/linktrr/6PkmQoNk.js"
+  charset="UTF-8"
+></script>
+
+<style>
+  .mp-hidden-perfit-optin {
+    position: fixed;
+    left: -9999px;
+    bottom: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 0;
+  }
+</style>
+
+<script>
+  document.addEventListener("click", function (event) {
+    const customButton = event.target.closest(".js-open-perfit-optin");
+
+    if (!customButton) return;
+
+    event.preventDefault();
+
+    const perfitWrapper = document.getElementById("optin-6PkmQoNk");
+
+    if (!perfitWrapper) return;
+
+    const perfitButton = perfitWrapper.querySelector(
+      "a, button, [role='button'], input[type='button'], input[type='submit']"
+    );
+
+    if (perfitButton) {
+      perfitButton.click();
+    }
+  });
+</script>
+<!-- Optin Perfit - Fin -->

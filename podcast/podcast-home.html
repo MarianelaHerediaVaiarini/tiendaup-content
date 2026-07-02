@@ -1,0 +1,329 @@
+<section class="podcast-section" id="podcast">
+  <div class="podcast-container">
+
+    <div class="podcast-header">
+      <p class="podcast-eyebrow">Podcast</p>
+
+      <h2>La puerta del ahora</h2>
+
+      <p>
+        Un espacio divertido para nutrir tu mente, cuerpo y espíritu, donde universalizamos
+        el conocimiento que nos permite ser conscientes de nuestra consciencia, despertar
+        nuestro poder y recordarnos que somos capaces de crear la vida que deseamos.
+      </p>
+    </div>
+
+    <div class="podcast-layout">
+
+      <div class="podcast-cover">
+        <img 
+          src="https://i.ibb.co/H02W31B/Captura-de-pantalla-2026-06-22-a-la-s-10-43-46.png" 
+          alt="Portada del podcast La puerta del ahora"
+        >
+      </div>
+
+      <div class="podcast-episodes">
+
+        <a href="https://open.spotify.com/episode/5qXdK2kxasnYBIgLMZnANc?si=c0ad579f890c4e01" target="_blank" rel="noopener noreferrer" class="episode-row">
+          <span class="episode-number">01</span>
+
+          <div class="episode-info">
+            <h3>Integrar lo vivido para crear y avanzar con tu verdad (1/2)</h3>
+          </div>
+
+          <span class="episode-cta">Escuchar →</span>
+        </a>
+
+        <a href="https://open.spotify.com/episode/3Lblavh8AIqALbxlnmSFMW?si=73722f5fb09e4a64" target="_blank" rel="noopener noreferrer" class="episode-row">
+          <span class="episode-number">02</span>
+
+          <div class="episode-info">
+            <h3>Metamorfosis: el salto entre quien ya no sos y quien vas a ser</h3>
+          </div>
+
+          <span class="episode-cta">Escuchar →</span>
+        </a>
+
+        <a href="https://open.spotify.com/episode/7H5MeqzUo6yrTbY9ClZxOJ?si=4e3b2b02d3f64a1d" target="_blank" rel="noopener noreferrer" class="episode-row">
+          <span class="episode-number">03</span>
+
+          <div class="episode-info">
+            <h3>Suavidad y lentitud: la clave real para que tu transformación, sanación y expansión sean sanas y sostenibles</h3>
+          </div>
+
+          <span class="episode-cta">Escuchar →</span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="podcast-bottom">
+      <a 
+        href="https://open.spotify.com/show/7yYXBQV8e0XxmzwLGmy0kG?si=bb168a5341454219" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="podcast-main-btn"
+      >
+        Ver podcast completo
+        <span>→</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  :root {
+    --soberanas-color: #b42358;
+    --soberanas-dark: #6b0000;
+    --cream: #fbf5ec;
+    --soft-pink: #fff4f8;
+    --text: #2a1b18;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .podcast-section {
+    padding: 70px 24px;
+    color: var(--text);
+    border-top: 1px solid var(--soberanas-color);
+  }
+
+  .podcast-container {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .podcast-header {
+    max-width: 760px;
+    margin-bottom: 44px;
+  }
+
+  .podcast-eyebrow {
+    margin: 0 0 18px;
+    color: var(--soberanas-color);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .podcast-header h2 {
+    margin: 0;
+    color: var(--soberanas-dark);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(46px, 6vw, 86px);
+    line-height: 0.95;
+    font-weight: 400;
+  }
+
+  .podcast-header p {
+    max-width: 620px;
+    margin: 24px 0 0;
+    font-size: 19px;
+    line-height: 1.65;
+  }
+
+  .podcast-layout {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .podcast-cover {
+    background: var(--soft-pink);
+    border: 1px solid rgba(180, 35, 88, 0.14);
+    border-radius: 28px;
+    padding: 18px;
+  }
+
+  .podcast-cover img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+  }
+
+  .podcast-episodes {
+    background: #fff;
+    border: 1px solid rgba(180, 35, 88, 0.14);
+    border-radius: 28px;
+    overflow: hidden;
+  }
+
+  .episode-row {
+    display: grid;
+    grid-template-columns: 46px 1fr auto;
+    gap: 18px;
+    align-items: center;
+    padding: 22px 26px;
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(180, 35, 88, 0.12);
+    transition: background 0.25s ease;
+  }
+
+  .episode-row:last-child {
+    border-bottom: 0;
+  }
+
+  .episode-row:hover {
+    background: var(--soft-pink);
+  }
+
+  .episode-number {
+    color: var(--soberanas-color);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    line-height: 1;
+  }
+
+  .episode-info h3 {
+    margin: 0;
+    color: var(--soberanas-dark);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 1.12;
+    font-weight: 400;
+  }
+
+  .episode-cta {
+    color: var(--soberanas-color);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 10px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .podcast-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28px;
+  }
+
+  .podcast-main-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background: var(--soberanas-color);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 16px 24px;
+    border-radius: 999px;
+    transition: all 0.25s ease;
+  }
+
+  .podcast-main-btn:hover {
+    background: var(--soberanas-dark);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 860px) {
+    .podcast-section {
+      padding: 20px 18px;
+    }
+
+    .podcast-header {
+      margin-bottom: 32px;
+    }
+
+    .podcast-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+    }
+
+    .podcast-header h2 {
+      font-size: clamp(42px, 13vw, 60px);
+      line-height: 0.98;
+    }
+
+    .podcast-header p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .podcast-layout {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .podcast-cover {
+      border-radius: 24px;
+      padding: 12px;
+    }
+
+    .podcast-cover img {
+      aspect-ratio: 1 / 1;
+      border-radius: 18px;
+    }
+
+    .podcast-episodes {
+      border-radius: 24px;
+    }
+
+    .episode-row {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 12px;
+      padding: 18px 18px;
+    }
+
+    .episode-number {
+      font-size: 12px;
+      font-family: inherit;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .episode-info h3 {
+      font-size: clamp(19px, 5.8vw, 25px);
+      line-height: 1.12;
+    }
+
+    .episode-cta {
+      grid-column: 2;
+      margin-top: 8px;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+    }
+
+    .podcast-bottom {
+      justify-content: stretch;
+    }
+
+    .podcast-main-btn {
+      width: 100%;
+      padding: 15px 18px;
+      font-size: 10.5px;
+      letter-spacing: 0.08em;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .episode-row {
+      padding: 16px 16px;
+    }
+
+    .episode-info h3 {
+      font-size: 21px;
+    }
+
+    .podcast-main-btn {
+      font-size: 10px;
+      padding: 15px 14px;
+    }
+  }
+</style>

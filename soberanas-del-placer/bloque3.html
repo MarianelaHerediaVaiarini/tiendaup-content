@@ -1,0 +1,123 @@
+<style>
+  .sdp-center {
+    text-align: center;
+  }
+
+  .sdp-pillars {
+    background: linear-gradient(
+      90deg,
+      rgba(245, 238, 231, 0.3),
+      rgba(245, 238, 231, 0.95),
+      rgba(245, 238, 231, 0.3)
+    );
+  }
+
+  .sdp-pillars h2 {
+    max-width: 760px;
+    margin: 0 auto 56px;
+  }
+
+  .sdp-pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+  }
+
+  .sdp-pillar {
+    min-height: 190px;
+    padding: 0 28px;
+    border-right: 1px solid var(--sdp-border);
+  }
+
+  .sdp-pillar:last-child {
+    border-right: 0;
+  }
+
+  .sdp-pillar h3 {
+    margin: 0 0 10px;
+    color: var(--sdp-text);
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .sdp-icon {
+    margin-bottom: 24px;
+    color: var(--sdp-berry);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 42px;
+    line-height: 1;
+  }
+
+  .sdp-pillar p {
+    margin: 0;
+    color: var(--sdp-muted);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 1024px) {
+    .sdp-pillars-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .sdp-pillar {
+      padding: 0;
+      border-right: 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .sdp-pillars-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .sdp-pillar {
+      padding-bottom: 26px;
+      border-bottom: 1px solid var(--sdp-border);
+    }
+
+    .sdp-pillar:last-child {
+      border-bottom: 0;
+    }
+  }
+</style>
+
+<section class="sdp-section sdp-pillars">
+  <div class="sdp-container">
+    <p class="sdp-eyebrow sdp-center">Más que un retiro</p>
+    <h2 class="sdp-center">Una experiencia para disfrutar</h2>
+
+    <div class="sdp-pillars-grid">
+      <article class="sdp-pillar">
+        <div class="sdp-icon">♡</div>
+        <h3>Volver al cuerpo</h3>
+        <p>Prácticas somáticas, movimiento y respiración para habitarte sin culpa.</p>
+      </article>
+
+      <article class="sdp-pillar">
+        <div class="sdp-icon">☼</div>
+        <h3>Conexión real</h3>
+        <p>Una tribu de mujeres que se eligen, se miran y se sostienen.</p>
+      </article>
+
+      <article class="sdp-pillar">
+        <div class="sdp-icon">≈</div>
+        <h3>Placer y gozo</h3>
+        <p>El placer como brújula, no como premio. Un permiso para disfrutar.</p>
+      </article>
+
+      <article class="sdp-pillar">
+        <div class="sdp-icon">✦</div>
+        <h3>Naturaleza viva</h3>
+        <p>Mar turquesa, sol, arena y atardeceres que acompañaron el proceso.</p>
+      </article>
+
+      <article class="sdp-pillar">
+        <div class="sdp-icon">✺</div>
+        <h3>Transformación</h3>
+        <p>Damos juntas un salto hacia la vida desde el disfrute.</p>
+      </article>
+    </div>
+  </div>
+</section>

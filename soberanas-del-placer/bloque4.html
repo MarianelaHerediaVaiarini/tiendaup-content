@@ -1,0 +1,86 @@
+<style>
+  .sdp-gallery-section {
+    padding-bottom: 22px;
+  }
+
+  .sdp-section-heading {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .sdp-section-heading h2 {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .galeria-responsive {
+    width: 100%;
+    column-count: 4;
+    column-gap: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .galeria-responsive img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    break-inside: avoid;
+    object-fit: cover;
+  }
+
+  .galeria-responsive img:hover {
+    transform: scale(1.02);
+    transition: transform 0.25s ease;
+  }
+
+  @media (max-width: 1100px) {
+    .galeria-responsive {
+      column-count: 3;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .galeria-responsive {
+      column-count: 2;
+      column-gap: 6px;
+      padding: 6px;
+    }
+
+    .galeria-responsive img {
+      margin-bottom: 6px;
+      border-radius: 6px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .galeria-responsive {
+      column-count: 2;
+      column-gap: 4px;
+      padding: 4px;
+    }
+
+    .galeria-responsive img {
+      margin-bottom: 4px;
+      border-radius: 5px;
+    }
+  }
+</style>
+
+<section class="sdp-section sdp-gallery-section" id="momentos">
+    <div class="sdp-section-heading">
+      <p class="sdp-eyebrow">Así fue nuestra semana</p>
+      <h2>Momentos que quedan para siempre</h2>
+    </div>
+</section>
+
+<section class="galeria-responsive">
+  <img src="https://i.ibb.co/4RqRNx8H/7-BD169-C8-67-B0-4219-A46-E-28-D8-FEB8535-B.jpg" alt="Foto 1">
+  <img src="https://i.ibb.co/JwN6nJ4w/844985-F7-4330-4-E1-B-8-A2-B-1-EB05-C756-FE7.jpg" alt="Foto 2">
+  <img src="https://i.ibb.co/qMGZnRx1/CDE81-EE2-6-E8-E-45-F0-9-E4-D-678-BEB242638.jpg" alt="Foto 3">
+  <img src="https://i.ibb.co/YTFXNy5d/IMG-4685.jpg" alt="Foto 4">
+   <img src="https://i.ibb.co/6Rr7CQtd/F8-AAAE5-A-59-DE-4-EC7-BE87-4-EF2-F5367-B65.jpg" alt="Foto 5">
+  <img src="https://i.ibb.co/dw34GGHS/D3725528-3382-47-D0-8801-FC932-D32-EE0-B.jpg" alt="Foto 6">
+  <img src="https://i.ibb.co/YTDgPtJz/IMG-0006.avif" alt="Foto 7">
+</section>
