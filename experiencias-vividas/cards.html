@@ -1,0 +1,265 @@
+<section class="experiencias-vive">
+  <div class="experiencias-vive-inner">
+
+    <div class="experiencias-vive-head">
+      <p class="experiencias-vive-eyebrow">LA ESENCIA DE CADA ENCUENTRO</p>
+
+      <h2 class="experiencias-vive-title">
+        Lo que se abre cuando nos encontramos
+      </h2>
+
+      <p class="experiencias-vive-subtitle">
+        Cada experiencia tiene su propio ritmo, pero todas nacen de la misma intención:
+        crear espacios cuidados donde puedas bajar el ruido, habitar el cuerpo y
+        compartir desde la presencia.
+      </p>
+    </div>
+
+    <div class="experiencias-vive-grid">
+
+      <article class="experiencias-vive-card">
+        <span class="experiencias-vive-number">01</span>
+        <h3>Presencia</h3>
+        <p>
+          Prácticas para volver al cuerpo, respirar y escuchar lo que está pasando dentro.
+        </p>
+      </article>
+
+      <article class="experiencias-vive-card">
+        <span class="experiencias-vive-number">02</span>
+        <h3>Tribu</h3>
+        <p>
+          Un espacio íntimo donde compartir sin exigencia, sin máscaras y sin tener que hacerlo sola.
+        </p>
+      </article>
+
+      <article class="experiencias-vive-card">
+        <span class="experiencias-vive-number">03</span>
+        <h3>Naturaleza</h3>
+        <p>
+          Entornos que acompañan el proceso, invitan a bajar el ritmo y abrir la sensibilidad.
+        </p>
+      </article>
+
+      <article class="experiencias-vive-card">
+        <span class="experiencias-vive-number">04</span>
+        <h3>Integración</h3>
+        <p>
+          Momentos para llevar lo vivido a la vida cotidiana, con más claridad y calma.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+<style>
+    .experiencias-vive,
+.experiencias-vive * {
+  box-sizing: border-box;
+}
+
+.experiencias-vive {
+  position: relative;
+  background: #f5efe5;
+  color: #394030;
+  padding: clamp(78px, 9vw, 130px) 24px;
+  overflow: hidden;
+}
+
+.experiencias-vive::before {
+  content: "";
+  position: absolute;
+  width: 42vw;
+  height: 42vw;
+  border-radius: 50%;
+  background: rgba(91, 99, 79, 0.08);
+  top: -22vw;
+  right: -16vw;
+  pointer-events: none;
+}
+
+.experiencias-vive::after {
+  content: "";
+  position: absolute;
+  width: 26vw;
+  height: 26vw;
+  border-radius: 50%;
+  border: 1px solid rgba(91, 99, 79, 0.16);
+  bottom: -14vw;
+  left: -10vw;
+  pointer-events: none;
+}
+
+.experiencias-vive-inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1120px);
+  margin: 0 auto;
+}
+
+.experiencias-vive-head {
+  max-width: 820px;
+  margin: 0 auto clamp(48px, 6vw, 76px);
+  text-align: center;
+}
+
+.experiencias-vive-eyebrow {
+  margin: 0 0 22px;
+  font-size: clamp(11px, 1vw, 14px);
+  line-height: 1;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(57, 64, 48, 0.58);
+}
+
+.experiencias-vive-title {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(44px, 6.6vw, 88px);
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+  font-weight: 400;
+  color: #394030;
+}
+
+.experiencias-vive-subtitle {
+  max-width: 720px;
+  margin: clamp(26px, 3.2vw, 38px) auto 0;
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.45;
+  letter-spacing: -0.025em;
+  font-weight: 400;
+  color: rgba(57, 64, 48, 0.68);
+}
+
+.experiencias-vive-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.experiencias-vive-card {
+  position: relative;
+  min-height: 310px;
+  padding: 34px 28px 30px;
+  border-radius: 28px;
+  background: rgba(255, 252, 245, 0.72);
+  border: 1px solid rgba(91, 99, 79, 0.16);
+  box-shadow: 0 22px 60px rgba(57, 64, 48, 0.07);
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
+}
+
+.experiencias-vive-card::before {
+  content: "";
+  position: absolute;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background: rgba(91, 99, 79, 0.08);
+  right: -38px;
+  top: -38px;
+  transition: transform 0.28s ease;
+}
+
+.experiencias-vive-card:hover {
+  transform: translateY(-6px);
+  background: #fffaf1;
+  box-shadow: 0 28px 72px rgba(57, 64, 48, 0.11);
+}
+
+.experiencias-vive-card:hover::before {
+  transform: scale(1.18);
+}
+
+.experiencias-vive-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 34px;
+  border-radius: 999px;
+  background: #5b634f;
+  color: #f5efe5;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.experiencias-vive-card h3 {
+  margin: 0 0 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  font-weight: 400;
+  color: #394030;
+}
+
+.experiencias-vive-card p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.55;
+  letter-spacing: -0.015em;
+  color: rgba(57, 64, 48, 0.68);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .experiencias-vive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experiencias-vive-card {
+    min-height: 260px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 680px) {
+  .experiencias-vive {
+    padding: 68px 18px;
+  }
+
+  .experiencias-vive-head {
+    margin-bottom: 42px;
+  }
+
+  .experiencias-vive-title {
+    font-size: clamp(42px, 13vw, 66px);
+    line-height: 0.98;
+  }
+
+  .experiencias-vive-subtitle {
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  .experiencias-vive-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .experiencias-vive-card {
+    min-height: auto;
+    padding: 30px 24px 28px;
+    border-radius: 24px;
+  }
+
+  .experiencias-vive-number {
+    margin-bottom: 28px;
+  }
+
+  .experiencias-vive-card h3 {
+    font-size: 34px;
+  }
+
+  .experiencias-vive-card p {
+    font-size: 16px;
+  }
+}
+</style>
